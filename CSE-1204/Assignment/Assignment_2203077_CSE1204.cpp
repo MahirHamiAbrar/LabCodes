@@ -230,13 +230,6 @@ int Car::vehicleCount = 0;
 int Truck::vehicleCount = 0;
 
 
-int main() {
-    TollPlaza tp;
-    while (tp.isRunning()) tp.showLoginRegistrationMenu();
-    return 0;
-}
-
-
 /* Vehicle Class Implementation */
 Vehicle::Vehicle() {}
 
@@ -537,4 +530,12 @@ void TollPlaza::operatorSearch() {
 
 void TollPlaza::backFromSearch() {
     __search_menu_open = false;
+}
+
+
+// the main function
+int main() {
+    TollPlaza tp;
+    while (tp.isRunning()) tp.showLoginRegistrationMenu();
+    return 0;
 }
